@@ -463,3 +463,10 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 135ms (Views: 129.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-01-25 23:09:36 +0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 12735ms (Views: 12712.1ms | ActiveRecord: 0.0ms)
+
+
