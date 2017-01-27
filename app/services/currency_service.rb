@@ -1,19 +1,14 @@
 require 'net/http'
 require 'json'
 
-class CurrencyService
-
-  def initialize
-
-  end
-
-  def getcourse(currency)
-  url = "http://api.fixer.io/latest?base=#{currency}"
+  def getcourse(cur)
+  url = "http://api.fixer.io/latest?base=#{cur}&symbols=RUB"
   uri = URI(url)
   response = Net::HTTP.get(uri)
   parsed = JSON.parse(response)
-
+  course = parsed["rates"]["RUB"]
   end
 
-end
+puts getcourse('USD')
+puts getcourse('EUR') 
 
